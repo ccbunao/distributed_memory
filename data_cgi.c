@@ -438,7 +438,7 @@ int main (void)
             query_parse_key_value(query, "fileId", fileId, NULL);
             LOG(DATA_LOG_MODULE, DATA_LOG_PROC, "=== fileId:%s,cmd:%s", fileId,  cmd);
 
-            str_replace(fileId, "%2F", "/");
+            cgi_str_replace(fileId, "%2F", "/");
 
             increase_file_pv(fileId);
 
@@ -453,7 +453,7 @@ int main (void)
             query_parse_key_value(query, "fileId", fileId, NULL);
             query_parse_key_value(query, "user", user, NULL);
             LOG(DATA_LOG_MODULE, DATA_LOG_PROC, "=== fileId:%s,cmd:%s, user:%s", fileId,  cmd, user);
-            str_replace(fileId, "%2F", "/");
+            cgi_str_replace(fileId, "%2F", "/");
 
 
             move_file_to_public_list(fileId, cmd, user);

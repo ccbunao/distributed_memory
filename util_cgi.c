@@ -307,7 +307,7 @@ END:
 }
 
 
-void str_replace(char* strSrc, char* strFind, char* strReplace)
+void cgi_str_replace(char* strSrc, char* strFind, char* strReplace)
 {
     while (*strSrc != '\0')
     {

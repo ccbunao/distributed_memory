@@ -35,7 +35,7 @@
 
 void cgi_init(void);
 
-void str_replace(char* strSrc, char* strFind, char* strReplace);
+void cgi_str_replace(char* strSrc, char* strFind, char* strReplace);
 
 
 char* memstr(char* full_data, int full_data_len, char* substr);

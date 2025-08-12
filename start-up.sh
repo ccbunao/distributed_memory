@@ -24,11 +24,11 @@ redis-server ./conf/web-server/redis.conf
 #启动nginx服务器
 if [ ! -f "/usr/local/nginx/logs/nginx.pid" ]; then
     #no nginx.pid  need start
-    sudo /usr/local/nginx/sbin/nginx
+    sudo /usr/sbin/nginx
     echo "nginx start!"
 else
     #has nginx.pid need reload
-    sudo /usr/local/nginx/sbin/nginx -s reload
+    sudo /usr/sbin/nginx -s reload
     echo "nginx reload!"
 fi
 
